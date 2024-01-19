@@ -1,12 +1,14 @@
-import "./App.css";
+import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App flex">
-      <div className="text-red-600 text-2xl">test</div>
-      <div className="text-red-600 text-2xl">test</div>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={''} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
