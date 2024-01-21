@@ -1,19 +1,21 @@
 /* eslint-disable react/prop-types */
 import classNames from 'classnames';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import ROUTES from '../../../../types/routes';
 
-const NavHeader = ({ name, whiteSpace, active, setActive }) => {
+const NavHeader = ({ name, href, value }) => {
+    let location = useLocation();
+
     return (
         <Link
-            onClick={() => setActive(name)}
-            to="/"
+            to={href}
             className={classNames(
-                'text-black text-xs font-bold leading-normal tracking-[0.0375rem] uppercase font-arimo-sans-serif hover:opacity-70 hover:text-[#024E82]',
-                { 'text-red-800': active === name }
+                'text-black text-xs font-bold leading-normal tracking-[0.0375rem] uppercase font-arimo-sans-serif hover:opacity-70 hover:text-[#024E82] px-2',
+                { 'text-red-800': location.pathname === ROUTES[value] }
             )}
         >
-            {whiteSpace ? whiteSpace : name}
+            {name}
         </Link>
     );
 };
