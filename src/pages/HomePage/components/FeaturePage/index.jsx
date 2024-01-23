@@ -1,7 +1,7 @@
 import React from 'react';
-import FeatureCard from '../../../../componets/FeatureCard';
 
 import { Fingerprint, Undo2, Truck } from 'lucide-react';
+import FeatureCard from '../../../../components/FeatureCard';
 
 const FeaturePage = () => {
     return (

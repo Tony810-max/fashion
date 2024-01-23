@@ -1,11 +1,16 @@
 import React from 'react';
-import Header from '../../componets/Layout/MainLayout/Header';
+import Header from '../../components/Layout/MainLayout/Header';
+import BannerSection from './components/BannerSection';
+import Footer from '../../components/Layout/MainLayout/Footer';
+import ContactUsSection from './components/ContactUsSection';
 
 const ContactPage = () => {
     return (
         <div>
             <Header />
-            ContactPage
+            <BannerSection />
+            <ContactUsSection />
+            <Footer />
         </div>
     );
 };

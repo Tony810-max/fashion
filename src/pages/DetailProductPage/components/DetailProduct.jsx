@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
-import { Breadcrumbs, Select, Typography } from '@mui/material';
+import { Breadcrumbs, MenuItem, Select, Typography } from '@mui/material';
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 import ROUTES from '../../../types/routes';
+
 import { Star } from 'lucide-react';
-import { MenuItem } from '@mui/base';
 
 const SELECT_DATA = [
     {
@@ -57,11 +59,11 @@ const DetailProduct = ({ product }) => {
                         <span>{product?.title}</span>
                         <div className="flex gap-2 items-center">
                             <div className="flex items-center">
-                                <Star color="yellow" size={16} fill="yellow" />
-                                <Star color="yellow" size={16} fill="yellow" />
-                                <Star color="yellow" size={16} fill="yellow" />
-                                <Star color="yellow" size={16} fill="yellow" />
-                                <Star color="yellow" size={16} />
+                                <Star color="#D6763C" size={16} fill="#D6763C" />
+                                <Star color="#D6763C" size={16} fill="#D6763C" />
+                                <Star color="#D6763C" size={16} fill="#D6763C" />
+                                <Star color="#D6763C" size={16} fill="#D6763C" />
+                                <Star color="#D6763C" size={16} />
                             </div>
                             <span>{`(15)`}</span>
                         </div>
@@ -79,15 +81,16 @@ const DetailProduct = ({ product }) => {
                                 })}
                             </span>
                         </div>
-                        <div>
-                            <span>{product?.description}</span>
+                        <div className="min-h-[4.5rem] mt-7">
+                            <span className="">{product?.description}</span>
                         </div>
+
                         <Select
                             labelId="demo-simple-select-label"
                             id="demo-simple-select"
                             value={size}
-                            label="size"
                             onChange={handleSelectSize}
+                            className="mt-9"
                         >
                             {SELECT_DATA.map((item, index) => (
                                 <MenuItem key={index} value={item?.value}>

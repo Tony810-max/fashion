@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import ProductCard from '../../../../componets/ProductCard';
 import { Button } from '@mui/material';
+import ProductCard from '../../../../components/ProductCard';
 
 const BestSelling = () => {
     const [data, setData] = useState([]);

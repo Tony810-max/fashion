@@ -1,11 +1,19 @@
 import React from 'react';
-import Header from '../../componets/Layout/MainLayout/Header';
+
+import BannerSection from './components/BannerSection';
+import FeatureSection from './components/FeatureSection';
+import ReviewSection from './components/ReviewSection';
+import Header from '../../components/Layout/MainLayout/Header';
+import Footer from '../../components/Layout/MainLayout/Footer';
 
 const AboutPage = () => {
     return (
         <div>
             <Header />
-            AboutPage
+            <BannerSection />
+            <FeatureSection />
+            <ReviewSection />
+            <Footer />
         </div>
     );
 };

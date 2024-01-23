@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import Header from '../../componets/Layout/MainLayout/Header';
+
 import axios from 'axios';
 import DetailProduct from './components/DetailProduct';
+import Header from '../../components/Layout/MainLayout/Header';
 
 const DetailProductPage = () => {
     const [data, setData] = useState();
