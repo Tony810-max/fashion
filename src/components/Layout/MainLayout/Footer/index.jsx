@@ -11,7 +11,7 @@ import visaElectron from '../../../../assets/images/Footer/visaElectron.webp';
 
 const Footer = () => {
     return (
-        <div className="mt-28 flex justify-center bg-[#FBFBFB] pt-[3.3rem] pb-8">
+        <div className="flex justify-center bg-[#FBFBFB] pt-[3.3rem] pb-8">
             <div className="container">
                 <div className="flex gap-[13.5rem]">
                     <div>
