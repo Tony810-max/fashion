@@ -11,7 +11,7 @@ const NavHeader = ({ name, href, value }) => {
         <Link
             to={href}
             className={classNames(
-                'text-black text-xs font-bold leading-normal tracking-[0.0375rem] uppercase font-arimo-sans-serif hover:opacity-70 hover:text-[#024E82] px-2',
+                'text-black text-center text-xs font-bold leading-normal tracking-[0.0375rem] uppercase font-arimo-sans-serif hover:opacity-70 hover:text-[#024E82] px-5 py-5',
                 { 'text-red-800': location.pathname === ROUTES[value] }
             )}
         >
